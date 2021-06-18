@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input tag - autofocus</title>
+</head>
+<body>
+    <h3>입력 태그 - 속성(autofocus)</h3>
+    <hr>
+    <p>입력 태그의 속성은(autofocus)는 입력 커서를 특정 위치로 지정한다.</p>
+    <ul>
+        <li>입력 타입 text가 autofocus를 받게 되면 캐럿이 위치하게 된다.</li>
+        <li>입력 타입이 버튼 계열이면 마우스 커서가 표시된다.</li>
+        <li>여러 입력 태그에 autofocus를 지정하게 되면 가장 상위의 태그가 포커스 된다.</li>
+
+    </ul>
+    <hr>
+    <form>
+        <label>아이디<input type="text" name="userid" value="guest"></label><br>
+        <label>이  름<input type="text" name="username" value="" autofocus></label><br>
+        <label>주  소<input type="text" name="address" value=""></label><br>
+        <label>첨부파일<input type="file" name="userfile"></label><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
