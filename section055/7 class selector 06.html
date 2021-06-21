@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector Style</title>
+    <style>
+        .redtext{ /* 클래스 선택자 */
+            color:red;
+        }
+        .bluetext{ /* 클래스 선택자 */
+            color:blue;
+        }
+        .boldtext {
+            font-weight:bold;
+        }
+        .underlinetext {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>스타일을 여러개 적용하는 클래스 선택자</h1>
+    <hr>
+    <p> 스타일을 여러개 적용하기 위해서는 태그의 클래스에
+        클래스 선택자를 나열하여 지정한다.
+    </p>
+    <p> 예제는 모든 hn태그가 클래스명으로 redtext로 지정되어 있지만 태그(h4)만 스타일이 적용된다.</p>
+    <hr>
+    <h2 class="redtext boldtext">간절함은 성공의 자극제이다.</h2>
+    <h3 class="redtext">공부에 <span class="bluetext">왕도</span>는 없다.</h3>
+    <h3 class="redtext">공부에 <span class="bluetext boldtext">왕도</span>는 없다.</h3>
+    <h4 class="redtext"> 성공의 지름길은 없다.</h4>
+    <h5><span class="underlinetext">공부에 왕도는 없다.</span></h5>
+    <h6 class="redtext"> 공부에 왕도는 없다. <span class="bluetext boldtext">좋은 습관</span></h6>
+</body>
+</html>
