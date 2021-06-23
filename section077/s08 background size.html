@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Size</title>
+    <style>
+        div {
+            width : 500px;
+            height : 500px;
+            border: 2px double black;
+            margin-bottom:20px;
+        }
+        .bg1 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: auto;
+        }
+
+        .bg2 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: 200px 150px;
+        }
+
+        .bg3 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: 60% 40%;
+        }
+
+        .bg4 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: contain;
+        }
+
+        .bg5 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: cover;
+        }
+
+        .bg6 {
+            background:url("images/back.jpg") no-repeat left top;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Size</h1>
+    <p>background size는 배경 이미지의 크기를 조절한다.</p>
+    <ul>
+        <li>auto: 기본값, 원래 배경 이미지 크기만큼 표시</li>
+        <li>contain: 배경 이미지가 꽉 차도록 확대 or 축소</li>
+        <li>cover: 배경 이미지가 브라우저 창 높이와 같아질 때까지 세로로 반복</li>
+        <li>크기값: 너비값, 높이값 지정</li>
+        <li>백분율: 배경 이미지가 들어갈 태그의 요소 크기를 기준으로 백분율을 지정하고
+            그 크기가 맞도록 배경 이미지를 확대/축소</li>
+    </ul>
+    <hr>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="bg4"></div>
+        <div class="bg5"></div>
+        <div class="bg6"></div>
+
+</body>
+</html>
