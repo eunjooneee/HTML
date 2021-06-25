@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 110px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        li a{
+            padding : 5px 20px;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        [href~="#view"] {
+            background : coral;
+            color: green;
+        }
+
+        [class~="#main"] {
+            background : rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>속성 선택자(Attribute Selector) - 속성값(~=)</h1>
+    <h3>특정한 단어의 값을 포함하는 속성에 스타일을 적용
+        속성값이 단어 단위로 여러개인 경우에도 일치하는 한 단어가 있으면 적용된다.
+    </h3>
+    <hr>
+    <ul>
+        <li><a class="#main submenu">메인 메뉴</a></li>
+        <li><a href="#file">파일 메뉴</a></li>
+        <li><a href="#edit">편집 메뉴</a></li>
+        <li><a href="#view">보기 메뉴</a></li>
+        <li><a href="#help">도움말</a></li>
+
+
+    </ul>
+</body>
+</html>
